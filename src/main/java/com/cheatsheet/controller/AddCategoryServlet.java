@@ -30,7 +30,7 @@ public class AddCategoryServlet extends HttpServlet {
                 
                 response.sendRedirect("categories?error=failed");
             }
-            System.out.println();
+            
         }
     }
 }
