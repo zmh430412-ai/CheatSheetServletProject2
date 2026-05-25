@@ -30,6 +30,7 @@ public class AddCategoryServlet extends HttpServlet {
                 // မအောင်မြင်ရင် Error တစ်ခုခုပြမယ် (Optional)
                 response.sendRedirect("categories?error=failed");
             }
+            System.out.println();
         }
     }
 }
