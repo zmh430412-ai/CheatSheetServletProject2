@@ -24,10 +24,10 @@ public class AddCategoryServlet extends HttpServlet {
             boolean success = dao.addCategory(catName);
             
             if (success) {
-                // အောင်မြင်ရင် Dashboard ဆီ ပြန်ပို့မယ်
+                
                 response.sendRedirect("categories");
             } else {
-                // မအောင်မြင်ရင် Error တစ်ခုခုပြမယ် (Optional)
+                
                 response.sendRedirect("categories?error=failed");
             }
             System.out.println();
